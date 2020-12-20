@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "knex": "<0.20.0",
+    "sharp": "^0.26.3",
     "sqlite3": "latest",
     "strapi": "3.3.4",
     "strapi-admin": "3.3.4",
