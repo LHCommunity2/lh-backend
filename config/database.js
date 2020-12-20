@@ -1,13 +1,16 @@
+require('dotenv');
+
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: 'mongoose',
       settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+        client: 'mongo',
+        uri : `mongodb://lh-backend:${process.env.PASSWORD}@cluster0-shard-00-00.22nxh.mongodb.net:27017,cluster0-shard-00-01.22nxh.mongodb.net:27017,cluster0-shard-00-02.22nxh.mongodb.net:27017/<lh-global>?ssl=true&replicaSet=atlas-a5rxh8-shard-0&authSource=admin&retryWrites=true&w=majority`
       },
       options: {
+        "ssl" : true,
         useNullAsDefault: true,
       },
     },
