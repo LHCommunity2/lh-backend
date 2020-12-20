@@ -4,9 +4,6 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "postinstall": "npm run production",
-    "heroku-prebuild": "npm install -f",
-    "heroku-postbuild": "npm run production",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
