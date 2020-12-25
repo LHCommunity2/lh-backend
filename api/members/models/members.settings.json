@@ -45,6 +45,9 @@
     },
     "type": {
       "type": "string"
+    },
+    "textImage": {
+      "type": "string"
     }
   }
 }
